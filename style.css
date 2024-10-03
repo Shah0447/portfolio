@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  
+    
+}
+li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size:16px;
+    color:#353935;
+    text-decoration: none;
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 5%;
+    position:fixed;
+    z-index: 1000;
+    top:0;
+}
+.logo{
+    cursor: pointer;
+  margin-right:2%;
+}
+.nav-links{
+    list-style: none;
+}
+.nav-links li{
+    display:inline-block;
+    padding:0px 20px;
+}
+.nav-links li a{
+    transition: all 0.3s ease 0s;
+}
+.nav-links li a:hover{
+    color:#7e2f49;
+    text-decoration:overline;
+    font-size: 110%;
+}
+button{
+    padding:9px 25px;
+    border:none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    background-color: #614564;
+    color:#f7f2f2
+}
+button:hover{
+    font-size: 103%;
+}
+
+/** home **/
+body{
+    margin-top:17%;
+}
+.home{
+    margin-top: 8%;
+    margin-left:7%;
+}
+h1{
+    font-size: 65px;
+    color:#222224;
+}
+h2{
+    font-size: 18px;
+    font-weight: 200;
+}
+h3{
+    font-size:16px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    line-height:24px;
+}
+.home{
+    justify-content: space-evenly;
+}
+.home a button1{
+    text-decoration: none;
+    background-color: #c52c50;
+    color:#f9f0f0;
+    margin:26px 0px;
+    padding:10px 18px;
+    border-radius: 10px;
+    display:inline-block;
+    transition: .4s ease;
+}
+.home a button1:hover{
+    color:beige;
+    font-size:110%;
+}
+.image{
+    position: absolute;
+    height: 50%;
+    width:30%;
+    right:20%;
+    bottom:0;
+    top:27%;
+}
+.image img{
+    position: absolute;
+    height:100%;
+    left:40%;
+   bottom:0;
+   border-radius: 20%;
+}
+.icons a{
+    text-decoration: none;
+    color:#000;
+   position: relative;
+   left:75px;
+}
+.icons i{
+    margin-left:20px;
+    font-size:35px;
+}
+.icons i:hover{
+    color:#222224;
+    font-size:35.5px;
+}
+
+/**education**/
+.edu {
+    margin-left:7%;
+    font-family: Georgia, serif;
+}
+.edu h1{
+   font-size: 22px;
+   font-family: Garamond;
+   font-weight: 550;
+   letter-spacing: 0.0001px;
+}
+.edu h3{
+    font-size:20px;
+    letter-spacing: 0.1px;
+    font-weight: 670;
+    color:#353935;
+    font-family:  Georgia;
+}
+.edu h4{
+    letter-spacing: 0.01px;
+    font-size:18px;
+    font-weight: 550;
+    color:#1d1d1f;
+}
+.edu h5{
+    font-size:16px;
+    font-weight:500;
+}
+.edu .italic{
+    display:flex;
+    justify-content:start;
+    margin:0.3px 0;
+    width:285px;
+    justify-content: space-around;
+    font-style: italic;
+    
+}
+.edu .italic i{
+    font-size: medium;
+}
+/**experience**/
+.experience{
+    font-family: 'montserrat' , sans-serif;
+   margin:7% 6%;
+}
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0px;
+  }
+  .timeline {
+    width: 80%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .timeline ul {
+    list-style: none;
+  }
+  .timeline ul li {
+    padding: 20px;
+    background-color: #1e1f22;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .timeline ul li:last-child {
+    margin-bottom: 0;
+  }
+  .timeline-content h1 {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  .timeline-content p {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+  }
+ 
+  @media only screen and (min-width: 768px) {
+   .timeline::before{
+    content: '';
+    position: absolute;
+    height:100%;
+    width:2px;
+    background-color: gray;
+    left:50%;
+    transform: translateX(-50%);
+   }
+    .timeline ul li {
+      width: 50%;
+      position: relative;
+      margin-bottom: 50px;
+    }
+    .timeline ul li:nth-child(odd) {
+      float: left;
+      clear:right;
+      transform: translateX(-30px);
+    }
+    .timeline ul li:nth-child(even) {
+      float: right;
+      clear:left;
+      transform: translateX(30px);
+    }
+     .timeline ul li::after{
+        content: '';
+    position: absolute;
+    background-color: gray;
+    height:20px;
+    width:20px;
+    border-radius: 50%;
+    top:0;
+     }
+     .timeline ul li:nth-child(odd)::after {
+        transform: translate(50%,-50%);
+      right:-30px;
+      }
+      .timeline ul li:nth-child(even)::after {
+        transform: translate(-50%,-50%);
+      left:-30px;
+      }
+  }
+/**footer**/
+footer{
+    background-color: #222224;
+    color:#f9f0f0;
+    height:200px;
+}
