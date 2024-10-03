@@ -230,11 +230,13 @@ h3{
       float: left;
       clear:right;
       transform: translateX(-30px);
+      border-radius: 20px 0px 20px 20px;
     }
     .timeline ul li:nth-child(even) {
       float: right;
       clear:left;
       transform: translateX(30px);
+      border-radius: 20px 0px 20px 20px;
     }
      .timeline ul li::after{
         content: '';
@@ -248,10 +250,14 @@ h3{
      .timeline ul li:nth-child(odd)::after {
         transform: translate(50%,-50%);
       right:-30px;
+      
       }
       .timeline ul li:nth-child(even)::after {
         transform: translate(-50%,-50%);
       left:-30px;
+      }
+      .timeline ul li:hover:after{
+background-color: #c52c50;
       }
   }
 /**footer**/
