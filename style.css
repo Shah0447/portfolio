@@ -169,6 +169,12 @@ h3{
     font-family: 'montserrat' , sans-serif;
    margin:7% 6%;
 }
+.experience h2{
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    font-weight:500
+}
 .container {
     min-height: 100vh;
     width: 100%;
@@ -210,7 +216,14 @@ h3{
     line-height: 30px;
     font-weight: 300;
   }
- 
+ .timeline-content .dmy{
+    font-size:13px;
+    font-weight:300;
+    margin-bottom:10px;
+    letter-spacing: 2px;
+    font-weight: 550;
+    color:#222222;
+ }
   @media only screen and (min-width: 768px) {
    .timeline::before{
     content: '';
@@ -236,7 +249,7 @@ h3{
       float: right;
       clear:left;
       transform: translateX(30px);
-      border-radius: 20px 0px 20px 20px;
+      border-radius: 0px 20px 20px 20px;
     }
      .timeline ul li::after{
         content: '';
@@ -257,7 +270,12 @@ h3{
       left:-30px;
       }
       .timeline ul li:hover:after{
-background-color: #c52c50;
+      background-color: #7e2f49
+      }
+      .timeline-content .dmy{
+        position:absolute;
+        top:-30px;
+       
       }
   }
 /**footer**/
