@@ -59,7 +59,7 @@ button:hover{
 body{
     margin-top:17%;
 }
-.home{
+#home{
     margin-top: 8%;
     margin-left:7%;
 }
@@ -77,10 +77,10 @@ h3{
     letter-spacing: 1px;
     line-height:24px;
 }
-.home{
+#home{
     justify-content: space-evenly;
 }
-.home a button1{
+#home a button1{
     text-decoration: none;
     background-color: #c52c50;
     color:#f9f0f0;
@@ -90,7 +90,7 @@ h3{
     display:inline-block;
     transition: .4s ease;
 }
-.home a button1:hover{
+#home a button1:hover{
     color:beige;
     font-size:110%;
 }
@@ -125,34 +125,34 @@ h3{
 }
 
 /**education**/
-.edu {
+#edu {
     margin-left:7%;
     font-family: Georgia, serif;
 }
-.edu h1{
+#edu h1{
    font-size: 22px;
    font-family: Garamond;
    font-weight: 550;
    letter-spacing: 0.0001px;
 }
-.edu h3{
+#edu h3{
     font-size:20px;
     letter-spacing: 0.1px;
     font-weight: 670;
     color:#353935;
     font-family:  Georgia;
 }
-.edu h4{
+#edu h4{
     letter-spacing: 0.01px;
     font-size:18px;
     font-weight: 550;
     color:#1d1d1f;
 }
-.edu h5{
+#edu h5{
     font-size:16px;
     font-weight:500;
 }
-.edu .italic{
+#edu .italic{
     display:flex;
     justify-content:start;
     margin:0.3px 0;
@@ -161,15 +161,22 @@ h3{
     font-style: italic;
     
 }
-.edu .italic i{
+#edu .italic i{
     font-size: medium;
 }
 /**experience**/
-.experience{
+#experience{
     font-family: 'montserrat' , sans-serif;
    margin:7% 6%;
 }
-.experience h2{
+#experience e{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight:300;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#experience h2{
     display: flex;
     justify-content: center;
     font-size: larger;
@@ -196,6 +203,7 @@ h3{
   }
   .timeline ul li {
     padding: 20px;
+    
     background-color: #1e1f22;
     color: white;
     border-radius: 10px;
@@ -225,8 +233,9 @@ h3{
     color:#222222;
  }
   @media only screen and (min-width: 768px) {
+    
    .timeline::before{
-    content: '';
+    
     position: absolute;
     height:100%;
     width:2px;
@@ -235,9 +244,9 @@ h3{
     transform: translateX(-50%);
    }
     .timeline ul li {
-      width: 50%;
+      width: 100%;
       position: relative;
-      margin-bottom: 50px;
+      margin-bottom: 80px;
     }
     .timeline ul li:nth-child(odd) {
       float: left;
@@ -278,9 +287,8 @@ h3{
        
       }
   }
+  
 /**footer**/
 footer{
-    background-color: #222224;
-    color:#f9f0f0;
     height:200px;
 }
